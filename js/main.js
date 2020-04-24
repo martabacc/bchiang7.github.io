@@ -11,18 +11,21 @@ const options = {
 $(function() {
   const d = new Date();
   const hours = d.getHours();
+  let greeting;
+  let comment;
 
   const data = [
-    [0, 4, 'Tidur atuh udah jam segini'],
-    [5, 11, 'Pagi pak bos!'], //Store messages in an array
-    [12, 17, 'Sore sayang'],
-    [18, 21, 'Malem, kau lagi ngapainnn'],
-    [21, 24, 'Nitenite sayang'],
+    [0, 4, 'Tidur atuh udah jam segini', 'Malem '],
+    [5, 11, 'Semangaaaat hari ini 😸', 'Pagi'],
+    [12, 17, 'Jangan lupa makan siang qamu 🍽 🍳', 'Siaaaang'],
+    [18, 22, 'Ngemil pilus dulu, laper pasti jam segini 😋', 'Sore '],
+    [22, 24, 'Sleep tight ya ‎😴 xoxo 😘', 'Nitenite  '],
   ];
-
+  
   for (let i = 0; i < data.length; i++) {
     if (hours >= data[i][0] && hours <= data[i][1]) {
-      greeting = data[i][2];
+      greeting = data[i][3];
+      comment = data[i][2];
     }
   }
 
@@ -30,7 +33,8 @@ $(function() {
   const body = document.querySelector('body');
   const toggle = document.getElementById('toggle');
   const input = document.getElementById('switch');
-  const greetText = document.getElementById('greet');
+  const greet = document.getElementById('greet');
+  const commentElement = document.getElementById('comment');
   const timeText = document.getElementById('time__slot');
 
   if (night) {
@@ -38,8 +42,9 @@ $(function() {
     body.classList.add('night');
   }
 
-  greetText.innerHTML = greeting;
+  greet.innerHTML = greeting;
   timeText.innerHTML = d.toLocaleString('en-US', options);
+  commentElement.innerHTML = comment.replace('NAME_PLACEHOLDER', 'Shimon');
 
   toggle.addEventListener('click', function() {
     const isChecked = input.checked;
