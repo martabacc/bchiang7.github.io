@@ -10,7 +10,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp"
+    "build": "gulp default"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
