@@ -5,12 +5,13 @@
   "engines": {
     "node": "10.15.3",
     "npm": "6.9.0"
- },
+  },
   "homepage": "https://github.com/bchiang7/bchiang7.github.io",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp default"
+    "heroku:production": "gulp heroku:production",
+    "build": "gulp build"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
@@ -22,7 +23,7 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-eslint": "^6.0.0",
     "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "3.0.2"
   }
 }

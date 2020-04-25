@@ -21,7 +21,7 @@ $(function() {
     [18, 22, 'Ngemil pilus dulu, laper pasti jam segini 😋', 'Sore '],
     [22, 24, 'Sleep tight ya ‎😴 xoxo 😘', 'Nitenite  '],
   ];
-  
+
   for (let i = 0; i < data.length; i++) {
     if (hours >= data[i][0] && hours <= data[i][1]) {
       greeting = data[i][3];
