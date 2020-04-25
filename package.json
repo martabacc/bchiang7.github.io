@@ -11,7 +11,7 @@
   "scripts": {
     "start": "gulp serve",
     "heroku:production": "gulp heroku:production",
-    "build": "./build.sh && gulp build"
+    "build": "gulp build"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
