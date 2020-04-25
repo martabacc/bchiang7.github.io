@@ -6,6 +6,10 @@
     "type": "git",
     "url": "https://github.com/bchiang7/bchiang7.github.io"
   },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
+ },
   "homepage": "https://github.com/bchiang7/bchiang7.github.io",
   "main": "gulpfile.js",
   "scripts": {
