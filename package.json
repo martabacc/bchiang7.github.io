@@ -2,10 +2,6 @@
   "name": "brittanychiang.com",
   "version": "0.0.0",
   "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
-  },
   "engines": {
     "node": "10.15.3",
     "npm": "6.9.0"
@@ -14,7 +10,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp"
   },
   "author": "Brittany Chiang",
   "license": "ISC",
