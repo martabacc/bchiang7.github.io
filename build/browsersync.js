@@ -33,7 +33,7 @@ module.exports = gulp => {
     browserSync.reload();
   });
 
-  gulp.task('heroku:production', ['jekyll-dev'], () => {
+  gulp.task('heroku:production', ['jekyll-build'], () => {
     browserSync.init({
       server: {
         baseDir: '_site',
@@ -46,7 +46,7 @@ module.exports = gulp => {
     browserSync.init({
       server: {
         baseDir: '_site',
-      }
+      },
     });
 
     gulp.watch(scssPath, ['sass', browserSync.reload]);
