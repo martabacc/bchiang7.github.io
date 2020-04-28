@@ -15,7 +15,7 @@
   },
   "author": "Brittany Chiang",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@nuscout/eslint-config": "^0.2.1",
     "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
