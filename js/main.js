@@ -1,5 +1,5 @@
 const options = {
-  timeZone: 'America/New_York',
+  timeZone: 'Asia/Jakarta',
   hour12: false,
   weekday: 'long',
   month: 'long',
