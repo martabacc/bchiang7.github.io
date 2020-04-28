@@ -10,7 +10,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "heroku:production": "gulp heroku:production",
+    "dev": "gulp serve-dev",
     "build": "gulp build"
   },
   "author": "Brittany Chiang",
